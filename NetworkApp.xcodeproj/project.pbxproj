@@ -13,6 +13,10 @@
 		109CCB4A2B04CAA600E71CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109CCB482B04CAA600E71CD1 /* Main.storyboard */; };
 		109CCB4C2B04CAA800E71CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109CCB4B2B04CAA800E71CD1 /* Assets.xcassets */; };
 		109CCB4F2B04CAA800E71CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109CCB4D2B04CAA800E71CD1 /* LaunchScreen.storyboard */; };
+		109CCB572B04CBF000E71CD1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CCB562B04CBF000E71CD1 /* ViewModel.swift */; };
+		109CCB592B04CC2C00E71CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CCB582B04CC2C00E71CD1 /* Post.swift */; };
+		109CCB5B2B04D51200E71CD1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CCB5A2B04D51200E71CD1 /* PostViewController.swift */; };
+		109CCB5F2B04D53E00E71CD1 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CCB5E2B04D53E00E71CD1 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		109CCB4B2B04CAA800E71CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109CCB4E2B04CAA800E71CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109CCB502B04CAA800E71CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109CCB562B04CBF000E71CD1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		109CCB582B04CC2C00E71CD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		109CCB5A2B04D51200E71CD1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		109CCB5E2B04D53E00E71CD1 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				109CCB422B04CAA600E71CD1 /* AppDelegate.swift */,
 				109CCB442B04CAA600E71CD1 /* SceneDelegate.swift */,
-				109CCB462B04CAA600E71CD1 /* ViewController.swift */,
+				109CCB5C2B04D52A00E71CD1 /* ViewController */,
+				109CCB5D2B04D53000E71CD1 /* PostViewController */,
+				109CCB582B04CC2C00E71CD1 /* Post.swift */,
 				109CCB482B04CAA600E71CD1 /* Main.storyboard */,
 				109CCB4B2B04CAA800E71CD1 /* Assets.xcassets */,
 				109CCB4D2B04CAA800E71CD1 /* LaunchScreen.storyboard */,
 				109CCB502B04CAA800E71CD1 /* Info.plist */,
 			);
 			path = NetworkApp;
+			sourceTree = "<group>";
+		};
+		109CCB5C2B04D52A00E71CD1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				109CCB462B04CAA600E71CD1 /* ViewController.swift */,
+				109CCB562B04CBF000E71CD1 /* ViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		109CCB5D2B04D53000E71CD1 /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				109CCB5A2B04D51200E71CD1 /* PostViewController.swift */,
+				109CCB5E2B04D53E00E71CD1 /* PostViewModel.swift */,
+			);
+			path = PostViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109CCB5B2B04D51200E71CD1 /* PostViewController.swift in Sources */,
+				109CCB5F2B04D53E00E71CD1 /* PostViewModel.swift in Sources */,
 				109CCB472B04CAA600E71CD1 /* ViewController.swift in Sources */,
 				109CCB432B04CAA600E71CD1 /* AppDelegate.swift in Sources */,
+				109CCB572B04CBF000E71CD1 /* ViewModel.swift in Sources */,
 				109CCB452B04CAA600E71CD1 /* SceneDelegate.swift in Sources */,
+				109CCB592B04CC2C00E71CD1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
